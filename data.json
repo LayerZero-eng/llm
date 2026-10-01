@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-08-21",
+  "lastUpdated": "2026-10-01",
   "providers": [
     {
       "name": "Aion Labs",
@@ -156,6 +156,14 @@
       "footnoteRef": 1,
       "models": [
         {
+          "id": "gemini-3.8-flash",
+          "name": "Gemini 3.8 Flash",
+          "context": "1M",
+          "maxOutput": "65K",
+          "modality": "Text + Image + Audio + Video",
+          "rateLimit": "—"
+        },
+        {
           "id": "gemini-3.7-flash",
           "name": "Gemini 3.7 Flash",
           "context": "1M",
@@ -169,7 +177,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "15 RPM, 1,500 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemini-3.5-flash",
@@ -177,7 +185,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "15 RPM, 1,500 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemini-3.5-flash-lite",
@@ -185,7 +193,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "30 RPM, 1,500 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemini-3.1-flash-lite",
@@ -193,7 +201,15 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "30 RPM, 1,500 RPD"
+          "rateLimit": "—"
+        },
+        {
+          "id": "gemini-3-flash-preview",
+          "name": "Gemini 3 Flash Preview",
+          "context": "1M",
+          "maxOutput": "65K",
+          "modality": "Text + Image + Audio + Video",
+          "rateLimit": "—"
         },
         {
           "id": "gemini-2.5-flash",
@@ -201,7 +217,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "15 RPM, 1,500 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemini-2.5-flash-lite",
@@ -209,7 +225,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "30 RPM, 1,500 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemini-2.5-pro",
@@ -217,7 +233,7 @@
           "context": "1M",
           "maxOutput": "65K",
           "modality": "Text + Image + Audio + Video",
-          "rateLimit": "5 RPM, 50 RPD"
+          "rateLimit": "—"
         },
         {
           "id": "gemma-4-31b-it",
@@ -444,27 +460,11 @@
           "rateLimit": "30 RPM, 1,000 RPD"
         },
         {
-          "id": "groq/compound",
-          "name": "groq/compound",
-          "context": "131K",
-          "maxOutput": "8K",
-          "modality": "Text",
-          "rateLimit": "30 RPM, 250 RPD"
-        },
-        {
-          "id": "groq/compound-mini",
-          "name": "groq/compound-mini",
-          "context": "131K",
-          "maxOutput": "8K",
-          "modality": "Text",
-          "rateLimit": "30 RPM, 250 RPD"
-        },
-        {
-          "id": "qwen/qwen3.6-27b",
-          "name": "qwen/qwen3.6-27b",
+          "id": "qwen/qwen3.8-27b",
+          "name": "qwen/qwen3.8-27b",
           "context": "131K",
           "maxOutput": "16K",
-          "modality": "Text",
+          "modality": "Text + Image",
           "rateLimit": "30 RPM, 1,000 RPD"
         }
       ]
@@ -506,14 +506,6 @@
         {
           "id": "Qwen/Qwen2.5-Coder-7B-Instruct",
           "name": "Qwen2.5-Coder-7B-Instruct",
-          "context": "131K",
-          "maxOutput": "~4K",
-          "modality": "Text",
-          "rateLimit": "Credit-metered"
-        },
-        {
-          "id": "Qwen/Qwen2.5-7B-Instruct",
-          "name": "Qwen2.5-7B-Instruct",
           "context": "131K",
           "maxOutput": "~4K",
           "modality": "Text",
@@ -604,14 +596,6 @@
           "rateLimit": "200 req/hr"
         },
         {
-          "id": "tencent/hy3:free",
-          "name": "tencent/hy3:free",
-          "context": "262K",
-          "maxOutput": "128K",
-          "modality": "Text",
-          "rateLimit": "200 req/hr"
-        },
-        {
           "id": "nvidia/nemotron-3.5-lightning:free",
           "name": "nvidia/nemotron-3.5-lightning:free",
           "context": "1M",
@@ -625,6 +609,46 @@
           "context": "64K",
           "maxOutput": "8K",
           "modality": "Text",
+          "rateLimit": "200 req/hr"
+        },
+        {
+          "id": "kilo-auto/free",
+          "name": "kilo-auto/free",
+          "context": "256K",
+          "maxOutput": "32K",
+          "modality": "Text",
+          "rateLimit": "200 req/hr"
+        },
+        {
+          "id": "inclusionai/ling-3.0-flash-sante:free",
+          "name": "inclusionai/ling-3.0-flash-sante:free",
+          "context": "262K",
+          "maxOutput": "32K",
+          "modality": "Text",
+          "rateLimit": "200 req/hr"
+        },
+        {
+          "id": "qwen/qwen3.8-27b:free",
+          "name": "qwen/qwen3.8-27b:free",
+          "context": "262K",
+          "maxOutput": "235K",
+          "modality": "Multimodal",
+          "rateLimit": "200 req/hr"
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "dots-studio/dots-3-note-preview:free",
+          "context": "512K",
+          "maxOutput": "460K",
+          "modality": "Text + Vision",
+          "rateLimit": "200 req/hr"
+        },
+        {
+          "id": "thinkingmachines/inkling-small:free",
+          "name": "thinkingmachines/inkling-small:free",
+          "context": "1M",
+          "maxOutput": "262K",
+          "modality": "Multimodal",
           "rateLimit": "200 req/hr"
         }
       ]
@@ -640,14 +664,6 @@
       "footnoteRef": 10,
       "models": [
         {
-          "id": "gpt-oss:20b",
-          "name": "gpt-oss:20b",
-          "context": "128K",
-          "maxOutput": "—",
-          "modality": "Text",
-          "rateLimit": "10 RPM, 60 req/hr (anonymous)"
-        },
-        {
           "id": "mistral-Nemo-Instruct-2407",
           "name": "mistral-Nemo-Instruct-2407",
           "context": "128K",
@@ -659,6 +675,14 @@
           "id": "minimax-m2.7",
           "name": "minimax-m2.7",
           "context": "180K",
+          "maxOutput": "—",
+          "modality": "Text (reasoning)",
+          "rateLimit": "10 RPM, 60 req/hr (anonymous)"
+        },
+        {
+          "id": "GLM-5.3-Flash",
+          "name": "GLM-5.3-Flash",
+          "context": "400K",
           "maxOutput": "—",
           "modality": "Text (reasoning)",
           "rateLimit": "10 RPM, 60 req/hr (anonymous)"
@@ -756,7 +780,7 @@
           "name": "google/gemma-4-31b-it",
           "context": "262K",
           "maxOutput": "8K",
-          "modality": "Text",
+          "modality": "Text + Image + Video",
           "rateLimit": "40 RPM, 10,000 RPD"
         },
         {
@@ -828,14 +852,6 @@
           "rateLimit": "Session/weekly limits (unpublished)"
         },
         {
-          "id": "deepseek-v4-flash",
-          "name": "deepseek-v4-flash",
-          "context": "1M",
-          "maxOutput": "Model-dependent",
-          "modality": "Text",
-          "rateLimit": "Session/weekly limits (unpublished)"
-        },
-        {
           "id": "minimax-m3",
           "name": "minimax-m3",
           "context": "512K",
@@ -884,14 +900,6 @@
           "rateLimit": "Session/weekly limits (unpublished)"
         },
         {
-          "id": "qwen3.5:397b",
-          "name": "qwen3.5:397b",
-          "context": "256K",
-          "maxOutput": "Model-dependent",
-          "modality": "Text",
-          "rateLimit": "Session/weekly limits (unpublished)"
-        },
-        {
           "id": null,
           "name": "+ 7 more cloud models",
           "context": "Varies",
@@ -920,14 +928,6 @@
           "rateLimit": "20 RPM, 50 RPD"
         },
         {
-          "id": "openai/gpt-oss-20b:free",
-          "name": "openai/gpt-oss-20b:free",
-          "context": "131K",
-          "maxOutput": "32K",
-          "modality": "Text",
-          "rateLimit": "20 RPM, 50 RPD"
-        },
-        {
           "id": "cohere/north-mini-code:free",
           "name": "cohere/north-mini-code:free",
           "context": "256K",
@@ -952,38 +952,6 @@
           "rateLimit": "20 RPM, 50 RPD"
         },
         {
-          "id": "inclusionai/ling-3.0-flash:free",
-          "name": "inclusionai/ling-3.0-flash:free",
-          "context": "262K",
-          "maxOutput": "32K",
-          "modality": "Text",
-          "rateLimit": "20 RPM, 50 RPD"
-        },
-        {
-          "id": "nvidia/nemotron-3-nano-30b-a3b:free",
-          "name": "nvidia/nemotron-3-nano-30b-a3b:free",
-          "context": "256K",
-          "maxOutput": "—",
-          "modality": "Text",
-          "rateLimit": "20 RPM, 50 RPD"
-        },
-        {
-          "id": "nvidia/nemotron-nano-9b-v2:free",
-          "name": "nvidia/nemotron-nano-9b-v2:free",
-          "context": "128K",
-          "maxOutput": "—",
-          "modality": "Text",
-          "rateLimit": "20 RPM, 50 RPD"
-        },
-        {
-          "id": "nvidia/nemotron-nano-12b-v2-vl:free",
-          "name": "nvidia/nemotron-nano-12b-v2-vl:free",
-          "context": "128K",
-          "maxOutput": "128K",
-          "modality": "Text + Image",
-          "rateLimit": "20 RPM, 50 RPD"
-        },
-        {
           "id": "poolside/laguna-s-2.1:free",
           "name": "poolside/laguna-s-2.1:free",
           "context": "262K",
@@ -997,6 +965,70 @@
           "context": "262K",
           "maxOutput": "32K",
           "modality": "Text (code)",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "inclusionai/ling-3.0-flash-sante:free",
+          "name": "inclusionai/ling-3.0-flash-sante:free",
+          "context": "262K",
+          "maxOutput": "32K",
+          "modality": "Text",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "qwen/qwen3.8-27b:free",
+          "name": "qwen/qwen3.8-27b:free",
+          "context": "262K",
+          "maxOutput": "235K",
+          "modality": "Text + Image + Video",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "dots-studio/dots-3-note-preview:free",
+          "name": "dots-studio/dots-3-note-preview:free",
+          "context": "512K",
+          "maxOutput": "460K",
+          "modality": "Text + Image",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "liquid/lfm-2.5-2.6b:free",
+          "name": "liquid/lfm-2.5-2.6b:free",
+          "context": "64K",
+          "maxOutput": "8K",
+          "modality": "Text",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "nvidia/nemotron-3.5-lightning:free",
+          "name": "nvidia/nemotron-3.5-lightning:free",
+          "context": "1M",
+          "maxOutput": "64K",
+          "modality": "Text",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "thinkingmachines/inkling-small:free",
+          "name": "thinkingmachines/inkling-small:free",
+          "context": "1M",
+          "maxOutput": "262K",
+          "modality": "Text + Image + Audio",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "thinkingmachines/inkling:free",
+          "name": "thinkingmachines/inkling:free",
+          "context": "1M",
+          "maxOutput": "262K",
+          "modality": "Text + Image + Audio",
+          "rateLimit": "20 RPM, 50 RPD"
+        },
+        {
+          "id": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "name": "nvidia/nemotron-3-ultra-550b-a55b:free",
+          "context": "1M",
+          "maxOutput": "64K",
+          "modality": "Text",
           "rateLimit": "20 RPM, 50 RPD"
         },
         {
@@ -1060,18 +1092,18 @@
           "rateLimit": "2 RPM (anonymous)"
         },
         {
+          "id": "Qwen3.8-27B",
+          "name": "Qwen3.8-27B",
+          "context": "262K",
+          "maxOutput": "—",
+          "modality": "Text + Vision",
+          "rateLimit": "2 RPM (anonymous)"
+        },
+        {
           "id": "Qwen3.5-9B",
           "name": "Qwen3.5-9B",
           "context": "131K",
           "maxOutput": "~8K",
-          "modality": "Text",
-          "rateLimit": "2 RPM (anonymous)"
-        },
-        {
-          "id": "Qwen3-32B",
-          "name": "Qwen3-32B",
-          "context": "131K",
-          "maxOutput": "~32K",
           "modality": "Text",
           "rateLimit": "2 RPM (anonymous)"
         },
@@ -1141,11 +1173,11 @@
   "footnotes": [
     {
       "id": 1,
-      "text": "The Gemini API free tier is available to developers in the EU, UK, and Switzerland; the [available regions](https://ai.google.dev/gemini-api/docs/available-regions) page lists these regions. The [terms](https://ai.google.dev/gemini-api/terms) still require you to use only Paid Services when you make an API Client available to users in the European Economic Area, Switzerland, or the UK. Google no longer publishes per-model free-tier rate limits; check your quotas in [AI Studio](https://aistudio.google.com/). Free-tier prompts may be used by Google to improve products, except for users in the EEA, Switzerland and the UK, where the paid-services data terms also govern the unpaid quota, so those prompts are not used to improve Google products. `gemini-3.1-flash-lite` is on the [deprecation schedule](https://ai.google.dev/gemini-api/docs/deprecations), with a shutdown date of May 7, 2027 and `gemini-3.5-flash-lite` as its replacement; the row stays because the model is live and free today."
+      "text": "The Gemini API free tier is available to developers in the EU, UK, and Switzerland; the [available regions](https://ai.google.dev/gemini-api/docs/available-regions) page lists these regions. The [terms](https://ai.google.dev/gemini-api/terms) still require you to use only Paid Services when you make an API Client available to users in the European Economic Area, Switzerland, or the UK. Google no longer publishes per-model free-tier rate limits; check your quotas in [AI Studio](https://aistudio.google.com/). Free-tier prompts may be used by Google to improve products, except for users in the EEA, Switzerland and the UK, where the paid-services data terms also govern the unpaid quota, so those prompts are not used to improve Google products. `gemini-3.1-flash-lite` is on the [deprecation schedule](https://ai.google.dev/gemini-api/docs/deprecations), with a shutdown date of May 7, 2027 and `gemini-3.5-flash-lite` as its replacement; the row stays because the model is live and free today. Google [limits access](https://ai.google.dev/gemini-api/docs/models) to the 2.5 models to users who have actively used them; new projects should use 3.5 Flash-Lite or 3.8 Flash."
     },
     {
       "id": 2,
-      "text": "Groq shut down llama-3.3-70b-versatile and llama-3.1-8b-instant on August 16, 2026 ([deprecations](https://console.groq.com/docs/deprecations)). Remaining free-plan limits vary by model: compound and compound-mini get 250 RPD, most others 1,000 RPD ([rate limits](https://console.groq.com/docs/rate-limits))."
+      "text": "Groq shut down llama-3.3-70b-versatile and llama-3.1-8b-instant on August 16, 2026, qwen/qwen3.6-27b on September 14, 2026, and groq/compound and groq/compound-mini on September 21, 2026 ([deprecations](https://console.groq.com/docs/deprecations)). qwen/qwen3.8-27b is a preview model and may be discontinued without notice ([models](https://console.groq.com/docs/models)). Free-plan limits are per model ([rate limits](https://console.groq.com/docs/rate-limits))."
     },
     {
       "id": 3,
@@ -1157,7 +1189,7 @@
     },
     {
       "id": 5,
-      "text": "Kilo Code's free pool changes frequently, and the /api/gateway/models catalog can lag what is actually served: probe results have confirmed models absent from the catalog still answering. Every row listed here answered a live request between 2026-08-19 and 2026-08-21. Free models are reachable with no API key, at 200 requests per hour per IP ([authentication](https://kilo.ai/docs/gateway/authentication)). The kilo-auto/free router picks a model from the free pool, and Kilo's docs warn it \"may route your requests to providers that log prompts and outputs\". The NVIDIA free endpoints carry NVIDIA's own condition, quoted on Kilo's [models page](https://kilo.ai/docs/gateway/models-and-providers): \"Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services.\""
+      "text": "Kilo Code's free pool changes frequently, and the /api/gateway/models catalog can lag what is actually served: probe results have confirmed models absent from the catalog still answering. Every row listed here answered a live request between 2026-08-19 and 2026-08-21, except kilo-auto/free, inclusionai/ling-3.0-flash-sante:free, qwen/qwen3.8-27b:free, dots-studio/dots-3-note-preview:free and thinkingmachines/inkling-small:free, which were added on 2026-10-01 from the catalog (listed at $0) without a live probe. Free models are reachable with no API key, at 200 requests per hour per IP ([authentication](https://kilo.ai/docs/gateway/authentication)). The kilo-auto/free router picks a model from the free pool, and Kilo's docs warn it \"may route your requests to providers that log prompts and outputs\". The NVIDIA free endpoints carry NVIDIA's own condition, quoted on Kilo's [models page](https://kilo.ai/docs/gateway/models-and-providers): \"Trial use only - do not submit personal or confidential data. Your use is logged for security purposes and to improve NVIDIA products and services.\""
     },
     {
       "id": 6,
@@ -1169,11 +1201,11 @@
     },
     {
       "id": 9,
-      "text": "SiliconFlow requires real-name identity verification to use free models (effective May 15, 2026, per the [release notes](https://api-docs.siliconflow.cn/docs/release-notes/overview)). Verification supports mainland-Chinese documents; international users must contact support."
+      "text": "SiliconFlow requires real-name identity verification to use the platform, including free models (effective May 15, 2026, per the [release notes](https://api-docs.siliconflow.cn/docs/release-notes/overview)). Online [verification](https://api-docs.siliconflow.cn/docs/userguide/faqs/authentication) accepts Chinese identity documents (mainland ID card, Hong Kong/Macau/Taiwan travel or residence permits, foreign permanent residence permit); users without them must contact support."
     },
     {
       "id": 10,
-      "text": "LLM7.io rotates its catalog frequently, so the model list changes between checks. Access is tier-based, not token-based: `turbo` models are reachable anonymously or with a free token, `pro` models need the paid plan ([models API](https://docs.llm7.io/guides/models-api)). Anonymous access is capped at 1 RPS, 10 RPM, 60 requests per hour and 500,000 tokens per 24 hours; a free token raises that to 2 RPS, 40 RPM, 100 requests per hour and 1,000,000 tokens per 24 hours ([limits](https://docs.llm7.io/limits)). A paid Pro plan is available at $12/month. Anonymous access with no key was confirmed by live request on 2026-08-21."
+      "text": "LLM7.io rotates its catalog frequently, so the model list changes between checks. Access is tier-based, not token-based: `turbo` models are reachable anonymously or with a free token, `pro` models need the paid plan ([models API](https://docs.llm7.io/guides/models-api)). Anonymous access is capped at 1 RPS, 10 RPM, 60 requests per hour and 500,000 tokens per 24 hours; a free token is capped at 1 RPS, 60 RPM, 250 requests per hour and 100,000 tokens per 24 hours ([limits](https://docs.llm7.io/limits)). A paid Pro plan is available at $12/month. Anonymous access with no key was confirmed by live request on 2026-08-21."
     },
     {
       "id": 11,
